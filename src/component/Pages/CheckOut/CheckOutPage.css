@@ -1,0 +1,47 @@
+.check-out-page {
+    max-width: 600px;
+    margin: 0 auto;
+    padding: 2rem;
+    font-family: 'Arial', sans-serif;
+  }
+  
+  .check-out-page h1 {
+    color: #2c3e50;
+    font-size: 2.5rem;
+    text-align: center;
+    margin-bottom: 2rem;
+  }
+  
+  .date-selection {
+    margin-bottom: 1.5rem;
+  }
+  
+  .date-selection label {
+    font-size: 1.2rem;
+    color: #34495e;
+  }
+  
+  .date-selection input[type='date'] {
+    width: 100%;
+    padding: 0.5rem;
+    font-size: 1.2rem;
+    margin-top: 0.5rem;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+  }
+  
+  .next-button {
+    background-color: #3498db;
+    color: white;
+    font-size: 1.2rem;
+    padding: 0.8rem 2rem;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  
+  .next-button:hover {
+    background-color: #2980b9;
+  }
+  

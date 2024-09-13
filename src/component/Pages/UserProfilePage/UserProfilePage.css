@@ -1,0 +1,75 @@
+.user-profile-page {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 2rem;
+    font-family: 'Lato', sans-serif;
+    background-color: #f4f4f4;
+    min-height: 100vh;
+  }
+  
+  .user-profile-page h1 {
+    color: #2c3e50;
+    font-size: 2.5rem;
+    margin-bottom: 2rem;
+    text-align: center;
+  }
+  
+  .user-info {
+    background: white;
+    padding: 2rem;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    margin-bottom: 2rem;
+  }
+  
+  .user-info h2 {
+    color: #34495e;
+    font-size: 1.8rem;
+    margin-bottom: 1rem;
+  }
+  
+  .user-info p {
+    color: #7f8c8d;
+    margin-bottom: 0.5rem;
+  }
+  
+  .user-bookings h2 {
+    color: #2c3e50;
+    font-size: 2rem;
+    margin-bottom: 1.5rem;
+  }
+  
+  .booking-card {
+    background: white;
+    padding: 1.5rem;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    margin-bottom: 1.5rem;
+    transition: transform 0.3s ease;
+  }
+  
+  .booking-card:hover {
+    transform: translateY(-5px);
+  }
+  
+  .booking-card h3 {
+    color: #3498db;
+    font-size: 1.3rem;
+    margin-bottom: 0.5rem;
+  }
+  
+  .booking-card p {
+    color: #7f8c8d;
+    margin-bottom: 0.3rem;
+  }
+  
+  @media (max-width: 600px) {
+    .user-profile-page {
+      padding: 1rem;
+    }
+  
+    .user-info,
+    .booking-card {
+      padding: 1rem;
+    }
+  }

@@ -1,0 +1,72 @@
+.booking-confirmation-page23 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  background-color: #f0f4f8;
+  font-family: 'Helvetica Neue', Arial, sans-serif;
+}
+
+.confirmation-card23 {
+  background-color: #ffffff;
+  border-radius: 20px;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+  padding: 40px;
+  width: 100%;
+  max-width: 600px;
+  text-align: center;
+}
+
+.confirmation-title23 {
+  color: #2c3e50;
+  font-size: 2.5rem;
+  margin-bottom: 20px;
+  font-weight: 300;
+}
+
+.confirmation-icon23 {
+  font-size: 4rem;
+  color: #27ae60;
+  margin-bottom: 30px;
+}
+
+.confirmation-details23 {
+  margin-bottom: 30px;
+}
+
+.detail-item23 {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 15px;
+  padding-bottom: 15px;
+  border-bottom: 1px solid #eee;
+}
+
+.detail-label23 {
+  font-weight: bold;
+  color: #7f8c8d;
+}
+
+.detail-value23 {
+  color: #2c3e50;
+}
+
+.confirmation-message23 {
+  color: #34495e;
+  font-size: 1.1rem;
+  line-height: 1.6;
+}
+
+.confirmation-message23 p:first-child {
+  margin-bottom: 10px;
+}
+
+@media (max-width: 600px) {
+  .confirmation-card23 {
+    padding: 30px 20px;
+  }
+  
+  .confirmation-title23 {
+    font-size: 2rem;
+  }
+}

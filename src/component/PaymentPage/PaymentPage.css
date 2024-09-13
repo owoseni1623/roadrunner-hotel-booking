@@ -1,0 +1,55 @@
+.payment-page13 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    background: linear-gradient(135deg, #ece9e6, #ffffff);
+    padding: 20px;
+    box-sizing: border-box;
+    font-family: 'Arial', sans-serif;
+  }
+  
+  .payment-page13 h2 {
+    font-size: 2.5rem;
+    color: #333;
+    margin-bottom: 20px;
+    text-align: center;
+  }
+  
+  .payment-page13 p {
+    font-size: 1.2rem;
+    color: #555;
+    margin-bottom: 30px;
+    text-align: center;
+    max-width: 600px;
+  }
+  
+  .payment-page13 button {
+    background: #ff6600;
+    color: white;
+    border: none;
+    padding: 15px 40px;
+    font-size: 1.2rem;
+    font-weight: bold;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background 0.3s ease, transform 0.2s ease;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  }
+  
+  .payment-page13 button:hover {
+    background: #e65c00;
+    transform: translateY(-2px);
+  }
+  
+  .payment-page13 button:active {
+    background: #cc5200;
+    transform: translateY(0);
+  }
+  
+  .payment-page13 .logo13 {
+    max-width: 100px;
+    margin-bottom: 20px;
+  }
+  

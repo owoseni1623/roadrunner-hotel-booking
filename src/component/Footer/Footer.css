@@ -1,0 +1,119 @@
+.app-footer {
+  background-color: #f44336;
+  color: #ecf0f1;
+  padding: 3rem 0 1rem;
+  font-family: 'Arial', sans-serif;
+}
+
+.footer-content {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  gap: 2rem; /* Equal spacing between sections */
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 2rem;
+}
+
+.footer-section {
+  flex: 1 1 150px; /* Ensures each section takes equal space */
+  margin-bottom: 2rem;
+  min-width: 200px;
+  max-width: 300px;
+}
+
+.footer-section h3 {
+  color: #3498db;
+  margin-bottom: 1rem;
+  font-size: 1.2rem;
+}
+
+.footer-section p {
+  line-height: 1.6;
+}
+
+.footer-section ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+.footer-section ul li {
+  margin-bottom: 0.5rem;
+}
+
+.footer-section ul li a {
+  color: #ecf0f1;
+  text-decoration: none;
+  transition: color 0.3s ease;
+}
+
+.footer-section ul li a:hover {
+  color: #3498db;
+}
+
+.social-icons {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 1rem;
+}
+
+.social-icon {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  background-color: #34495e;
+  color: white;
+  text-decoration: none;
+  transition: transform 0.3s ease, background-color 0.3s ease;
+}
+
+.social-icon:hover {
+  transform: translateY(-3px);
+}
+
+.social-icon.facebook:hover {
+  background-color: #3b5998;
+}
+
+.social-icon.twitter:hover {
+  background-color: #1da1f2;
+}
+
+.social-icon.instagram:hover {
+  background-color: #e1306c;
+}
+
+.social-icon.youtube:hover {
+  background-color: #ff0000;
+}
+
+.footer-bottom {
+  text-align: center;
+  padding-top: 2rem;
+  margin-top: 2rem;
+  border-top: 1px solid #34495e;
+}
+
+@media (max-width: 768px) {
+  .footer-content {
+    flex-direction: column;
+    align-items: center;
+    gap: 2rem; /* Ensure equal spacing on smaller screens */
+  }
+
+  .footer-section {
+    text-align: center;
+    margin-bottom: 2rem;
+  }
+
+  .social-icons {
+    justify-content: center;
+  }
+
+  .social-icon {
+    margin: 0 0.5rem;
+  }
+}

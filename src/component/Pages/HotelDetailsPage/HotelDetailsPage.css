@@ -1,0 +1,138 @@
+/* Overall styling for the hotel details page */
+.hotel-details-page {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 2rem;
+  font-family: 'Helvetica', sans-serif;
+}
+
+/* Styling for the hotel name */
+.hotel-details-page h1 {
+  color: #2c3e50;
+  font-size: 2.8rem;
+  margin-bottom: 1.5rem;
+  text-align: center;
+}
+
+/* Styling for the main content section */
+.hotel-details-content {
+  display: flex;
+  gap: 2rem;
+  align-items: flex-start;
+}
+
+/* Styling for the hotel thumbnail image */
+.hotel-thumbnail {
+  width: 100%;
+  max-width: 600px;
+  height: auto;
+  border-radius: 15px;
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+}
+
+/* Styling for hotel information section */
+.hotel-info {
+  width: 50%;
+}
+
+/* Styling for paragraphs within hotel info */
+.hotel-info p {
+  color: #34495e;
+  line-height: 1.6;
+  margin-bottom: 1.5rem;
+}
+
+/* Styling for headings within hotel info */
+.hotel-info h2 {
+  color: #2c3e50;
+  font-size: 1.8rem;
+  margin: 1.5rem 0 1rem;
+}
+
+/* Styling for unordered lists within hotel info */
+.hotel-info ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+/* Styling for list items within hotel info */
+.hotel-info li {
+  color: #7f8c8d;
+  margin-bottom: 0.5rem;
+  padding-left: 1.5rem;
+  position: relative;
+}
+
+/* Styling for the checkmark bullet */
+.hotel-info li::before {
+  content: '✓';
+  color: #27ae60;
+  position: absolute;
+  left: 0;
+}
+
+/* Styling for the hotel price */
+.hotel-price {
+  font-size: 1.5rem;
+  color: #e74c3c;
+  font-weight: bold;
+  margin: 1.5rem 0;
+}
+
+/* Styling for the gallery section */
+.hotel-gallery {
+  width: 50%;
+}
+
+/* Styling for the container of gallery images */
+.gallery-images {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+/* Styling for individual gallery images */
+.gallery-image {
+  width: 100px;
+  height: 100px;
+  object-fit: cover;
+  margin: 5px;
+  cursor: pointer;
+}
+
+/* Styling for the modal overlay */
+.modal {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.8);
+}
+
+/* Styling for the modal content */
+.modal-content {
+  position: relative;
+  background-color: #fff;
+  padding: 20px;
+  border-radius: 10px;
+}
+
+/* Styling for the close button in the modal */
+.close {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  font-size: 24px;
+  color: #aaa;
+  cursor: pointer;
+}
+
+/* Styling for images within the modal */
+.modal-image {
+  width: 100%;
+  height: auto;
+  max-width: 600px;
+}
