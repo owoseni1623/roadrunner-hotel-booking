@@ -1,119 +1,156 @@
 .app-footer {
-  background-color: #f44336;
-  color: #ecf0f1;
-  padding: 3rem 0 1rem;
-  font-family: 'Arial', sans-serif;
+  background: linear-gradient(135deg, #1e1b4b 0%, #4338ca 100%);
+  color: white;
+  font-family: 'Poppins', sans-serif;
+  padding: 4rem 2rem 2rem;
+  position: relative;
+}
+
+.app-footer::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 4px;
+  background: linear-gradient(90deg, #6366f1 0%, #a855f7 100%);
 }
 
 .footer-content {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: space-between;
-  gap: 2rem; /* Equal spacing between sections */
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 3rem;
   max-width: 1200px;
   margin: 0 auto;
-  padding: 0 2rem;
-}
-
-.footer-section {
-  flex: 1 1 150px; /* Ensures each section takes equal space */
-  margin-bottom: 2rem;
-  min-width: 200px;
-  max-width: 300px;
 }
 
 .footer-section h3 {
-  color: #3498db;
-  margin-bottom: 1rem;
-  font-size: 1.2rem;
+  font-size: 1.3rem;
+  font-weight: 600;
+  margin-bottom: 1.5rem;
+  background: linear-gradient(90deg, #ffffff 0%, #e0e7ff 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
 }
 
 .footer-section p {
+  color: #e0e7ff;
   line-height: 1.6;
+  margin-bottom: 1rem;
 }
 
 .footer-section ul {
-  list-style-type: none;
+  list-style: none;
   padding: 0;
 }
 
 .footer-section ul li {
-  margin-bottom: 0.5rem;
+  margin-bottom: 0.8rem;
 }
 
 .footer-section ul li a {
-  color: #ecf0f1;
+  color: #e0e7ff;
   text-decoration: none;
-  transition: color 0.3s ease;
+  transition: all 0.3s ease;
+  display: inline-block;
+  position: relative;
+}
+
+.footer-section ul li a::after {
+  content: '';
+  position: absolute;
+  bottom: -2px;
+  left: 0;
+  width: 100%;
+  height: 1px;
+  background: linear-gradient(90deg, #6366f1 0%, #a855f7 100%);
+  transform: scaleX(0);
+  transform-origin: right;
+  transition: transform 0.3s ease;
 }
 
 .footer-section ul li a:hover {
-  color: #3498db;
+  color: white;
+}
+
+.footer-section ul li a:hover::after {
+  transform: scaleX(1);
+  transform-origin: left;
 }
 
 .social-icons {
   display: flex;
-  justify-content: space-between;
-  margin-top: 1rem;
+  gap: 1rem;
 }
 
 .social-icon {
-  display: inline-flex;
+  display: flex;
   align-items: center;
   justify-content: center;
-  width: 20px;
-  height: 20px;
+  width: 40px;
+  height: 40px;
   border-radius: 50%;
-  background-color: #34495e;
+  background: rgba(255, 255, 255, 0.1);
   color: white;
   text-decoration: none;
-  transition: transform 0.3s ease, background-color 0.3s ease;
+  transition: all 0.3s ease;
 }
 
 .social-icon:hover {
   transform: translateY(-3px);
+  background: rgba(255, 255, 255, 0.2);
 }
 
 .social-icon.facebook:hover {
-  background-color: #3b5998;
+  background: #1877f2;
+  box-shadow: 0 0 15px rgba(24, 119, 242, 0.5);
 }
 
 .social-icon.twitter:hover {
-  background-color: #1da1f2;
+  background: #1da1f2;
+  box-shadow: 0 0 15px rgba(29, 161, 242, 0.5);
 }
 
 .social-icon.instagram:hover {
-  background-color: #e1306c;
+  background: #e4405f;
+  box-shadow: 0 0 15px rgba(228, 64, 95, 0.5);
 }
 
 .social-icon.youtube:hover {
-  background-color: #ff0000;
+  background: #ff0000;
+  box-shadow: 0 0 15px rgba(255, 0, 0, 0.5);
 }
 
 .footer-bottom {
-  text-align: center;
+  margin-top: 3rem;
   padding-top: 2rem;
-  margin-top: 2rem;
-  border-top: 1px solid #34495e;
+  text-align: center;
+  border-top: 1px solid rgba(255, 255, 255, 0.1);
 }
 
+.footer-bottom p {
+  color: #e0e7ff;
+  font-size: 0.9rem;
+}
+
+/* Responsive Design */
 @media (max-width: 768px) {
-  .footer-content {
-    flex-direction: column;
-    align-items: center;
-    gap: 2rem; /* Ensure equal spacing on smaller screens */
+  .app-footer {
+    padding: 3rem 1.5rem 1.5rem;
   }
 
+  .footer-content {
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 2rem;
+  }
+}
+
+@media (max-width: 480px) {
   .footer-section {
     text-align: center;
-    margin-bottom: 2rem;
   }
 
   .social-icons {
     justify-content: center;
-  }
-
-  .social-icon {
-    margin: 0 0.5rem;
   }
 }
