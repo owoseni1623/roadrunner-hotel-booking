@@ -5,6 +5,10 @@ import "./Header.css";
 const Header = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
 
+  const toggleMenu = () => {
+    setIsMenuOpen(!isMenuOpen);
+  };
+
   return (
     <header className="app-header">
       <div className="logo-container">
@@ -12,11 +16,11 @@ const Header = () => {
         <h1 className="app-title">Roadrunner Hotel Booking</h1>
       </div>
       <button 
-        className="menu-button" 
-        onClick={() => setIsMenuOpen(!isMenuOpen)}
-        style={{ display: 'none' }} // This will be shown via media query
+        className="menu-button"
+        onClick={toggleMenu}
+        aria-label="Toggle navigation menu"
       >
-        ☰
+        <span className="hamburger-icon"></span>
       </button>
       <nav className={`nav-links ${isMenuOpen ? 'open' : ''}`}>
         <Link to="/booking/123" className="nav-button book-now">Book Now</Link>
