@@ -1,15 +1,24 @@
-import React from "react";
+import React, { useState } from "react";
 import { Link } from "react-router-dom";
 import "./Header.css";
 
 const Header = () => {
+  const [isMenuOpen, setIsMenuOpen] = useState(false);
+
   return (
     <header className="app-header">
       <div className="logo-container">
         <img src="/image/Hotel logo.jpeg" alt="Hotel Logo" className="logo" />
         <h1 className="app-title">Roadrunner Hotel Booking</h1>
       </div>
-      <nav className="nav-links">
+      <button 
+        className="menu-button" 
+        onClick={() => setIsMenuOpen(!isMenuOpen)}
+        style={{ display: 'none' }} // This will be shown via media query
+      >
+        ☰
+      </button>
+      <nav className={`nav-links ${isMenuOpen ? 'open' : ''}`}>
         <Link to="/booking/123" className="nav-button book-now">Book Now</Link>
         <Link to="/" className="nav-link">Home</Link>
         <Link to="/login" className="nav-link">Login</Link>
